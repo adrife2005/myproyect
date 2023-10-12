@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before{
+    display: block;
+    content: "";
+    height: 70px;
+}
+
+/* navbar */
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    line-height: 1.3rem ;
+}
+
+#main-ul {
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    #main-ul {
+        align-items: start;
+        margin-top: 1rem;
+    }
+}
+
+#navmenu a {
+    text-decoration: none;
+    color: white;
+    align-items: start;
+    font-size: 1.20rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+#navmenu a:hover  {
+    opacity: 0.6;
+}
+
+i {
+    font-size: 27px;
+} 
+
+.navbar-dark .navbar-toggler{
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-dark .navbar-toggler:hover {
+    color: firebrick;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* Showcase */
+
+#showcase {
+    background-color: black;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 250px ;
+    padding-bottom: 250px ;
+}
+
+h1 {
+    font-family: Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
+    font-size: 7rem;
+    font-weight: 700px;
+}
+
+.span_1 {
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.span_0 {
+    animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+     0% {
+        color: #9370DB; /* Blanco */
+      }
+      20% {
+        color: #FFFF00; /* Amarillo brillante */
+      }
+      40% {
+        color: #00FF00; /* Verde lima */
+      }
+      60% {
+        color: #00FFFF; /* Cian */
+      }
+      80% {
+        color: #87CEEB; /* Azul cielo */
+      }
+      100% {
+        color: #9370DB; /* Naranja */
+      }
+}
+
+@media (max-width:1400px) {
+    h1 {
+        font-size: 6rem;
+    }
+  }
+
+@media (max-width: 1200px) {
+    h1  {
+      font-size: 5rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    h1  {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+  }
+
+
+img {
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+@media (max-width:576px) {
+    img {
+        width: 75%;
+        margin-top: 5rem;
+    }
+}
+
+img:hover{
+    transform: scale(1.3);
+}
+
+@media (max-width:992px) {
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:768px) {
+    img:hover {
+        transform: scale(.7);
+    }
+}
+
+/* Contact */
+
+#Contact{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.list-group-item {
+    background-color: black;
+    color: white;
+    border:  1px solid white;
+    
+}
+
