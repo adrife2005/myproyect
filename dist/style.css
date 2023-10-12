@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body::before{
     display: block;
     content: "";
@@ -22,7 +18,7 @@ nav {
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.3rem ;
 }
 
@@ -77,18 +73,20 @@ i {
     background-color: black;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
-    padding-top: 200px ;
-    padding-bottom: 200px ;
+    padding-top: 220px ;
+    padding-bottom: 220px ;
 }
 
-h1 {
-    font-family: Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
-    font-size: 7rem;
-    font-weight: 700px;
+@media(max-width:768px) {
+    #showcase {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
+
 
 .span_1 {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
@@ -98,6 +96,10 @@ h1 {
 
 .span_3 {
     color: #00FF00
+}
+
+.span_5 {
+    animation: changeColor 5s infinite;
 }
 
 .span_0 {
@@ -125,58 +127,141 @@ h1 {
       }
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 700px;
+}
+
 @media (max-width:1400px) {
     h1 {
-        font-size: 6rem;
+        font-size: 4.5rem;
     }
   }
 
 @media (max-width: 1200px) {
     h1  {
-      font-size: 5rem;
+      font-size: 3.5rem;
     }
   }
   
   @media (max-width: 992px) {
     h1  {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 
   @media (max-width: 768px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
   }
 
 
-img {
+.img_0 {
     transition: 0.5s;
     object-fit: cover;
-}
+} 
 
-@media (max-width:576px) {
-    img {
+ @media (max-width:576px) {
+    .img_0 {
         width: 75%;
         margin-top: 5rem;
     }
-}
+} 
 
-img:hover{
+.img_0:hover{
     transform: scale(1.3);
 }
 
+
 @media (max-width:992px) {
-    img:hover {
+    .img_0:hover {
         transform: scale(1.1);
     }
 }
 
-@media (max-width:768px) {
-    img:hover {
-        transform: scale(.7);
+
+/* About me */
+
+#about {
+    background-color: black;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.75;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+@media(max-width:1400px) {
+    .h3_1 {
+        font-size: 1.25rem;
     }
 }
+
+@media (max-width: 1200px) {
+    .h3_1  {
+      font-size: 1.15rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .h3_1  {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .h3_1 {
+        font-size: 1rem;
+    }
+  }
+
+
+
+.my-img {
+    width: 500px; /* Establece el ancho deseado para el contenedor */
+    height: 500px; /* Establece la altura deseada para el contenedor */
+    border-radius: 50%; /* Aplica el borde circular */
+    display: flex;
+    overflow: hidden; /* Recorta la imagen para que se ajuste al círculo */
+  }
+
+  @media(max-width:1400px) {
+    .my-img {
+        width: 400px;
+        height: 400px;
+    }
+  }
+
+  @media(max-width:1200px) {
+    .my-img {
+        width: 350px;
+        height: 350px;
+    }
+  }
+  
+  .my_img2 {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    height: 100%; /* Establece la altura al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen para llenar completamente el círculo */
+    animation: moverBorde 2s linear infinite alternate; /* Aplica la animación del borde */
+    border: 6px solid transparent; /* Establece un borde transparente */
+    border-radius: 50%; /* Asegura que el borde siga siendo circular */
+    box-shadow: 0 0 10px 6px #FF5733; /* Establece un efecto de sombra con borde */
+  }
+
+  @keyframes moverBorde {
+    0% {
+      box-shadow: 0 0 10px 6px #FF5733; /* Establece el borde con sombra inicial */
+    }
+    100% {
+        box-shadow: 0 0 20px 12px #FF5733; /* Establece un borde con sombra aumentada */
+      }
+    }
 
 /* Contact */
 
