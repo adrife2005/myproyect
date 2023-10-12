@@ -77,8 +77,8 @@ i {
     background-color: black;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
-    padding-top: 250px ;
-    padding-bottom: 250px ;
+    padding-top: 200px ;
+    padding-bottom: 200px ;
 }
 
 h1 {
@@ -88,8 +88,16 @@ h1 {
 }
 
 .span_1 {
-    font-family: sans-serif;
+    font-family: cursive;
     font-weight: 600;
+}
+
+.span_2 {
+    color: #FF5733;
+}
+
+.span_3 {
+    color: #00FF00
 }
 
 .span_0 {
